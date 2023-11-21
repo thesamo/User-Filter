@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+
+}
+ul{
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.container {
+    background-color:cadetblue  ;
+    padding: 30px;
+    width: 600px;
+    text-align: center;
+    border-radius: 20px;
+    overflow-y: scroll; /* Dikey kaydırma çubuğunu etkinleştir */
+
+    
+    & h1{
+        color: #fff;
+    }
+    & p{
+       color: #fff;
+       margin: 10px;
+       font-size: 19px;
+    }
+    & input{
+        width: 100%;
+        padding:  10px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 18px;
+        color: cadetblue;
+        
+        &::placeholder {
+            color:cadetblue;
+            font-size: 18px;
+            padding: 10px;
+        }
+    }
+    
+
+}
+
+.lists ul{
+    max-height: 350px; 
+    overflow-y: scroll; 
+    padding: 5px 15px;
+}
+  
+
+  .lists ul li  {
+   padding: 10px;
+    background-color: #fff;
+    margin: 3px;
+    text-align: left;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & p {
+        color: #222 !important;
+        font-size: 14px;
+    }
+    & span{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    &:hover{
+        background-color: cadetblue;
+        cursor: pointer;
+    }
+
+  }
+  
